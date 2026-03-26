@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Sample Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.85;
+        }
+
+        nav {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .about {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 50px;
+        }
+
+        .about h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .about p {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        footer {
+            background: #333;
+            color: #aaa;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Page 👋</h1>
+        <p>A simple and clean sample webpage built with HTML & CSS</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>Fast</h3>
+                <p>Lightweight and optimized for speed with clean, minimal code.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Stylish</h3>
+                <p>Modern design with gradients, cards, and smooth hover effects.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>Responsive</h3>
+                <p>Looks great on all screen sizes — desktop, tablet, and mobile.</p>
+            </div>
+        </div>
+
+        <div class="about">
+            <h2>About This Page</h2>
+            <p>This is a sample HTML webpage created to demonstrate basic web development concepts including layout,
+                styling, and responsive design.</p>
+            <p>It uses only HTML and CSS — no frameworks or JavaScript required. Feel free to customize it with your own
+                content!</p>
+            <a class="btn" href="#">Learn More</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 My Sample Page · Built with ❤️ using HTML & CSS</p>
+    </footer>
+
+</body>
+
+</html>
